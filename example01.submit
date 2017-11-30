@@ -1,0 +1,13 @@
+Universe = vanilla 
+Executable = example01.sh
+Arguments = Input1
+Error = log/job.err.$(Cluster)-$(Process) 
+Output = log/job.out.$(Cluster)-$(Process) 
+Log = log/job.log.$(Cluster) 
+
+should_transfer_files = YES 
+transfer_output_files = output.txt
+
+when_to_transfer_output = ON_EXIT 
+
+Queue 1
